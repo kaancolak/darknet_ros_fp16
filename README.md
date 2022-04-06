@@ -55,8 +55,8 @@ $ sudo apt install ros-foxy-desktop ros-foxy-v4l2-camera
 $ source /opt/ros/foxy/setup.bash
 $ mkdir -p ~/ros2_ws/src
 $ cd ~/ros2_ws/src
-$ git clone --recursive https://github.com/Ar-Ray-code/darknet_ros_yolov4.git
-$ darknet_ros_yolov4/darknet_ros/rm_darknet_CMakeLists.sh
+$ git clone --recursive https://github.com/kaancolak/darknet_ros_yolov4.git
+$ ./darknet_ros_fp16/darknet_ros/rm_darknet_CMakeLists.sh
 $ cd ~/ros2_ws
 $ colcon build --symlink-install
 ```
@@ -111,7 +111,7 @@ Connect your webcam to your PC.
 ```bash
 $ source /opt/ros/foxy/setup.bash
 $ source ~/ros2_ws/install/local_setup.bash
-$ ros2 launch darknet_ros demo-v4-tiny.launch.py
+$ ros2 launch darknet_ros darknet_ros.launch.py
 ```
 
 ![example](https://user-images.githubusercontent.com/67567093/117596596-a2c8db00-b17e-11eb-90f9-146212e64567.png)
